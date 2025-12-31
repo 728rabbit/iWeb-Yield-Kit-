@@ -3620,7 +3620,6 @@ class iwebyKit {
             'iWeb Yield Kit - easily build web applications with the most commonly used features already included.',
             'Copyright: ' + yearText+ ' ' + author,
             'License: Personal/educational use only. Modifications and commercial use require permission.',
-            'Learn more: https://github.com/728rabbit/iweb-yield-kit'
         ];
         console.log(`%c${text.join('\n')}`, 'color: #525896; font-weight: bold;');
     }
