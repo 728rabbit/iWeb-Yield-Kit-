@@ -9,11 +9,11 @@
         <script src="3rd/floatingSocialShare.js"></script>
         <script src="3rd/timerCountDown.js" type="text/javascript"></script>
         <style>
-        div.iweb-countdown {
+        div.iweby-countdown {
             position: relative;
         }
 
-        div.iweb-countdown * {
+        div.iweby-countdown * {
             font-size: 24px;
             font-weight: bold;
         }
@@ -23,8 +23,8 @@
     <body>
         <div style="padding:40px;">
             <div class="widget">
-                <div class="iweb-countdown" data-value="20" data-direction="up">
-                    <ul class="iweb-flex hcenter" data-gap="20">
+                <div class="iweby-countdown" data-value="20" data-direction="up">
+                    <ul class="iweby-flex hcenter" data-gap="20">
                         <li><div class="day"><span>00</span>&nbsp;天</div></li>
                         <li><div class="hour"><span>00</span>&nbsp;時</div></li>
                         <li><div class="minute"><span>00</span>&nbsp;分</div></li>
@@ -36,8 +36,8 @@
             <p>&nbsp;</p>
             
             <div class="widget">
-                <div class="iweb-countdown" data-value="60">
-                    <ul class="iweb-flex hcenter" data-gap="20">
+                <div class="iweby-countdown" data-value="60">
+                    <ul class="iweby-flex hcenter" data-gap="20">
                         <li><div class="day"><span>00</span>&nbsp;天</div></li>
                         <li><div class="hour"><span>00</span>&nbsp;時</div></li>
                         <li><div class="minute"><span>00</span>&nbsp;分</div></li>
@@ -46,9 +46,9 @@
                 </div>
             </div>
         </div>
-        <script>const iweb = (new iwebyKit()).init();(new floatingSocialShare());</script>
+        <script>const iweby = (new iwebyKit()).init();(new floatingSocialShare());</script>
         <script>
-        function iwebFunc() { 
+        function iwebyFunc() { 
             const cm = new timerCountDown(function(item) {
                 console.log("完成:", item.el, "方向:", item.direction, "最大值:", item.maxValue);
                 item.el.style.border = "2px solid red";

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-hant">
     <head>
-        <title>iWeb Yard Kit 庭麥庫</title>
+        <title>iWeby Kit 您的創網苗圃工具庫</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="csrf-token" content="96ca6fd5cc5283000910785ba2344044"/>
@@ -52,15 +52,15 @@
                 overflow: hidden;
             }
             
-            #tinymce ul.iweb-flex > li {
+            #tinymce ul.iweby-flex > li {
                 border: 2px dotted var(--icolor-gray);
             }
             
-            #tinymce div.iweb-grid div.column,
-            #tinymce div.iweb-grid div.column-2,
-            #tinymce div.iweb-grid div.column-3,
-            #tinymce div.iweb-grid div.column-4,
-            #tinymce div.iweb-grid div.column-5 {
+            #tinymce div.iweby-grid div.column,
+            #tinymce div.iweby-grid div.column-2,
+            #tinymce div.iweby-grid div.column-3,
+            #tinymce div.iweby-grid div.column-4,
+            #tinymce div.iweby-grid div.column-5 {
                 border: 2px dotted var(--icolor-gray);
             }
         </style>
@@ -98,8 +98,8 @@
 
                 <div class="section">
                     <h1>2. 提示信息 Prompt information</h1>
-                    <div class="iweb-tips-message success"><div><a class="close">×</a><span>項目資料成功更新。</span></div></div>
-                    <div class="iweb-tips-message error"><div><a class="close">×</a><span>項目資料更新失敗。</span></div></div>
+                    <div class="iweby-tips-message success"><div><a class="close">×</a><span>項目資料成功更新。</span></div></div>
+                    <div class="iweby-tips-message error"><div><a class="close">×</a><span>項目資料更新失敗。</span></div></div>
                 </div>
 
                 <div class="section">
@@ -117,7 +117,7 @@
                     <h1>4. 表格 Form</h1>
                     <form data-ajax="1" data-alert="1">
                         <div class="widget">
-                            <div class="iweb-row">
+                            <div class="iweby-row">
                                 <label>專業/专业 Professional</label>
                                 <select name="professionals[]" data-validation="required" data-virtual="1" data-filter="1" multiple>
                                      <optgroup label="技術類 Technology">
@@ -139,14 +139,14 @@
                                 </select>
                             </div>
 
-                            <div class="iweb-row">
+                            <div class="iweby-row">
                                 <label>姓名 Name</label>
                                 <input type="text" name="name" data-validation="required" value="陳大文 Chen Tai Man">
                             </div>
 
-                            <div class="iweb-row">
+                            <div class="iweby-row">
                                 <label>性別 Gender</label>
-                                <div class="iweb-radio-set">
+                                <div class="iweby-radio-set">
                                     <input type="radio" id="male" name="gender" value="male" data-validation="required" checked>
                                     <label for="male">男 M</label>
 
@@ -155,7 +155,7 @@
                                 </div>
                             </div>
 
-                            <div class="iweb-row">
+                            <div class="iweby-row">
                                 <label>電話 Telephone</label>
                                 <table style="width:100%">
                                     <tr>
@@ -174,47 +174,47 @@
                                 </table>
                             </div>
 
-                            <div class="iweb-row">
+                            <div class="iweby-row">
                                 <label>電郵 Email</label>
                                 <input type="text" name="email" value="demo@123.com" data-validation="required|email">
                             </div>
 
-                            <div class="iweb-row">
+                            <div class="iweby-row">
                                 <label>密碼 Password</label>
                                 <input type="password" name="password" value="Abc123" data-validation="required|password">
                             </div>
 
-                            <div class="iweb-row">
+                            <div class="iweby-row">
                                 <label>開始日期 Start Date</label>
                                 <input type="date" name="start_date" value="2024-10-10" data-validation="required|date">
                             </div>
 
-                            <div class="iweb-row">
+                            <div class="iweby-row">
                                 <label>結束日期 End Date</label>
                                 <input type="date" name="end_date" value="2024-10-10" data-min="2025-03-02" data-validation="required|date" >
                             </div>
 
-                            <div class="iweb-row">
+                            <div class="iweby-row">
                                 <label>開始時間 Start Time</label>
                                 <input type="time" name="start_time"  value="08:00" data-start="800" data-end="2200" data-interval="10" data-validation="required|time">
                             </div>
 
-                            <div class="iweb-row">
+                            <div class="iweby-row">
                                 <label>結束時間 End Time</label>
                                 <input type="time" name="end_time" value="08:00" data-validation="required|time">
                             </div>
 
-                            <div class="iweb-row">
+                            <div class="iweby-row">
                                 <label>貨幣 Currency</label>
                                 <input type="text" name="currency" value="100" data-validation="required|ge0">
                             </div>
 
-                            <div class="iweb-row">
+                            <div class="iweby-row">
                                 <label>顔色選擇器 Color Picker</label>
                                 <input type="color" name="mycolor" value="#000000" data-validation="required">
                             </div>
 
-                            <div class="iweb-row">
+                            <div class="iweby-row">
                                 <label>推薦人 Recommender</label>
                                 <input type="text" class="fill-id" name="member_id" value="1" 
                                     data-validation="required"
@@ -227,7 +227,7 @@
                                     data-rfunc="remove_autoc">
                             </div>
 
-                            <div class="iweb-row">
+                            <div class="iweby-row">
                                 <label>單一附件 Single Attachment</label>
                                 <input type="file" name="myfile">
                                 <div>&nbsp;</div>
@@ -235,16 +235,16 @@
                                 <input type="file" name="mymultifile[]" multiple>
                             </div>
 
-                            <div class="iweb-row">
+                            <div class="iweby-row">
                                 <label>備注 Remark</label>
                                 <textarea name="content" data-validation="required">測試 Testing</textarea>
                             </div>
 
                             <div class="clearboth"></div>
 
-                            <div class="iweb-row">
+                            <div class="iweby-row">
                                 <label>接收推廣方式 Receiving method</label>
-                                <div class="iweb-checkbox-set">
+                                <div class="iweby-checkbox-set">
                                     <input type="checkbox" id="receiving_method_1" name="receiving_method[1000]" value="email" data-validation="required" checked>
                                     <label for="receiving_method_1">電郵 Email</label>
 
@@ -255,7 +255,7 @@
                                     <label for="receiving_method_3">Whatsapp</label>
                                 </div>
                             </div>
-                            <div class="iweb-row last">
+                            <div class="iweby-row last">
                                 <button type="reset" class="btn">重設 Reset</button>
                                 <button type="submit" class="btn">提交 Submit</button>
                             </div>
@@ -296,7 +296,7 @@
                 <div class="section">
                     <h1>9. 視頻 Video</h1>
                     <div>
-                        <video preload="auto" class="iweb-video" data-source="sample.mp4">
+                        <video preload="auto" class="iweby-video" data-source="sample.mp4">
                             <source id="videoSource" type="video/mp4">
                             Your browser does not support HTML5 video.
                         </video>
@@ -307,7 +307,7 @@
                     <h1>10. 網格排版 Grid layout</h1>
                     <div id="tinymce">
                         <div>
-                            <ul class="iweb-flex" data-gap="20">
+                            <ul class="iweby-flex" data-gap="20">
                                 <li>關於我們</li>
                                 <li>課程主題</li>
                                 <li>聯絡我們</li>
@@ -317,24 +317,24 @@
                         <div style="line-height:2;color:red;">OR</div>
 
                         <div>
-                            <div class="iweb-row">
+                            <div class="iweby-row">
                                 <label>1/1</label>
-                                <div class="iweb-grid">
+                                <div class="iweby-grid">
                                     <div class="column">Col</div>
                                 </div>
                             </div>
                             
-                            <div class="iweb-row">
+                            <div class="iweby-row">
                                 <label>1/2</label>
-                                <div class="iweb-grid">
+                                <div class="iweby-grid">
                                     <div class="column-2">Col - 1</div>
                                     <div class="column-2">Col - 2</div>
                                 </div>
                             </div>
 
-                            <div class="iweb-row">
+                            <div class="iweby-row">
                                 <label>1/3</label>
-                                <div class="iweb-grid">
+                                <div class="iweby-grid">
                                     <div class="column-3">Col - 1</div>
                                     <div class="column-3">Col - 2</div>
                                     <div class="column-3">Col - 3</div>
@@ -342,9 +342,9 @@
                             </div>   
 
 
-                            <div class="iweb-row">
+                            <div class="iweby-row">
                                 <label>1/4</label>
-                                <div class="iweb-grid">
+                                <div class="iweby-grid">
                                     <div class="column-4">Col - 1</div>
                                     <div class="column-4">Col - 2</div>
                                     <div class="column-4">Col - 3</div>
@@ -352,9 +352,9 @@
                                 </div>
                             </div>
 
-                            <div class="iweb-row">
+                            <div class="iweby-row">
                                 <label>1/5</label>
-                                <div class="iweb-grid">
+                                <div class="iweby-grid">
                                     <div class="column-5">Col - 1</div>
                                     <div class="column-5">Col - 2</div>
                                     <div class="column-5">Col - 3</div>
@@ -382,7 +382,7 @@
                 <div class="section">
                     <h1>12. 響應式表格 Responsive Table </h1>
                     <div>
-                        <table id="demotable" class="iweb-table">
+                        <table id="demotable" class="iweby-table">
                             <thead>
                                 <tr style="background:#ccc;">
                                     <th style="background:lightpink;">Name</th>
@@ -409,7 +409,7 @@
                         
                         <br/><br/>
                         
-                        <table id="demotable2" class="iweb-table">
+                        <table id="demotable2" class="iweby-table">
                             <tbody>
                                 <tr>
                                     <td>Alice <span>(admin)</span></td>
@@ -429,22 +429,22 @@
                 </div>
                 
             </div>
-            <script>const iweb = (new iwebyKit()).init();(new floatingSocialShare());</script>
+            <script>const iweby = (new iwebyKit()).init();(new floatingSocialShare());</script>
             <script>
-            function iwebFunc() { 
+            function iwebyFunc() { 
                 // dialog
                 document.getElementById('btn-alert-dialog').addEventListener('click', function() {
-                    iweb.alert('您好！ Hello!'); 
+                    iweby.alert('您好！ Hello!'); 
                 });
 
                 document.getElementById('btn-confirm-dialog').addEventListener('click', function() { 
-                    iweb.confirm('您確定要刪除嗎？<br/>Are you sure you want to delete?', function(result) { 
+                    iweby.confirm('您確定要刪除嗎？<br/>Are you sure you want to delete?', function(result) { 
                         console.log(result);
                     }); 
                 });
 
                 document.getElementById('btn-content-dialog').addEventListener('click', function() { 
-                    iweb.dialog('您好！ Hello!', function() { 
+                    iweby.dialog('您好！ Hello!', function() { 
                         console.log('init info dialog');
                     }, function() {
                         console.log('close info dialog');
@@ -452,12 +452,12 @@
                 });
 
                 document.getElementById('btn-modal-dialog').addEventListener('click', function() {
-                    iweb.modalDialog('<h1>您好！ Hello!</h1>', null, {'title': '系統提示', 'ClassName': '', 'width': 800, 'height': 600 });
+                    iweby.modalDialog('<h1>您好！ Hello!</h1>', null, {'title': '系統提示', 'ClassName': '', 'width': 800, 'height': 600 });
                 });
                 
                 // request
                 document.getElementById('btn-post').addEventListener('click', function() {
-                    iweb.doPost({
+                    iweby.doPost({
                         url: 'http://localhost/fetch.php',
                         payload: {
                             name_1: 1,
@@ -472,7 +472,7 @@
 
 
                 document.getElementById('btn-get').addEventListener('click', function() {
-                    iweb.doFetch({
+                    iweby.doFetch({
                         url: 'http://localhost/fetch.php',
                         payload: {
                             name_1: 1,
@@ -486,10 +486,10 @@
                 });
 
                 // pagination
-                iweb.pagination('div.mypage');
+                iweby.pagination('div.mypage');
 
                 // uploader
-                iweb.uploaderArea('myfiles', {
+                iweby.uploaderArea('myfiles', {
                     url: 'http://localhost//upload.php',
                     payload: {
                         name: 'Chan Tai Man'
@@ -502,7 +502,7 @@
 
                 // Handle file selection button
                 document.getElementById('btn-select-files').addEventListener('click', function() { 
-                    iweb.uploader({
+                    iweby.uploader({
                         url: 'http://localhost:8000/myprojects/mylib/upload.php',
                         payload: {
                             name: 'abc'
