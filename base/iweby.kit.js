@@ -1657,7 +1657,7 @@ class iwebyKit {
                 }
                 
                 // Append payload
-                if (requestData.payload) {
+                /*if (requestData.payload) {
                     for (let key in (requestData.payload)) {
                         if ((requestData.payload).hasOwnProperty(key)) {
                             const value = requestData.payload[key];
@@ -1672,7 +1672,19 @@ class iwebyKit {
                             }
                         }
                     }
-                }
+                }*/
+                const appendFormData = (formData, data, parentKey = '') => {
+                    if (data && typeof data === 'object' && !(data instanceof File)) {
+                        Object.keys(data).forEach(key => {
+                            const value = data[key];
+                            const fullKey = parentKey ? `${parentKey}[${key}]` : key;
+                            appendFormData(formData, value, fullKey);
+                        });
+                    } else {
+                        formData.append(parentKey, data);
+                    }
+                };
+                appendFormData(formData, requestData.payload);
             }
 
             // Helper function to safely call if the function is defined
